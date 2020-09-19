@@ -2,11 +2,10 @@
 
 
     <div class="jumbotron text-center">
-        <h1 class="display-3">Welcome to GitHub-Search</h1>
+        <h1 class="display-3 ">Welcome to GitHub-Search</h1>
         <hr class="my-3">
-        <p>A single page application for searching github users and repositories.
-            The site uses the Github API to perform searches on Github,
-            and display the results to the users.</p>
+        <p>An application that will allow you to search for github users and their repositories.
+            The site uses the Github API that searches Github and display the results.</p>
 
     </div>
 
@@ -38,10 +37,10 @@
                 <div class="col-sm-6">
                     <div class="card" id="info">
                         <div class="card-body">
-                            <h4 appStrikethrough class="title">Username : <span class="name"> {{ user.login }}</span>
+                            <h4 class="title">Username : <span class="name"> {{ user.login }}</span>
                             </h4>
                             <hr>
-                            <p><i class="fa fa-file-o" style="font-size:18px"></i> Repositories : <span
+                            <p><i class="fa fa-file-o" style="font-size:30px"></i> Repositories : <span
                                     class="repo-num"> {{ user.public_repos }}</span></p><br>
                             <p><i class="fa fa-clock-o" style="font-size:18px"></i> Joined : <span class="joined">
                                     {{ user.created_at | dateCount }} </span> </p>
