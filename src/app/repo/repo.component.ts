@@ -25,7 +25,7 @@ export class RepoComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.searchRepo('ShazzKimani');
+    this.searchRepo('Davincii254');
   }
 
 }
