@@ -2,15 +2,11 @@
 
 
     <div class="jumbotron text-center">
-        <h1 class="display-3 ">Welcome to GitHub-Search</h1>
-        <hr class="my-3">
-        <p>An application that will allow you to search for github users and their repositories.
-            The site uses the Github API that searches Github and display the results.</p>
-
+        <h1 class="display-4">Welcome to GitHub-Search</h1>
     </div>
 
 
-    <div class="overlay">
+    <div class="userclass">
 
 
         <app-search (searchResult)="search($event)"></app-search> <br>
@@ -19,30 +15,29 @@
 
 
             <div class="row">
-                <div class="col-sm-4" id="img">
+                <div class="col-sm-6" id="image">
                     <div class="image">
                         <div class="card-img-top">
                             <img src="{{ user.avatar_url }}">
                         </div>
                         <div class="card-body">
-                            <span class="name"><i class="fa fa-user" style="font-size:20px"></i>
-                                &nbsp;{{user.login}}</span> &nbsp;
+                            <span class="name"><i class="fa fa-user" style="font-size:20px"></i> &nbsp;{{user.login}}</span> &nbsp;
                             <a href="{{user.html_url}}"><button class="btn btn-success btn-sm"><i class="fa fa-github"
-                                        style="font-size:20px"></i> &nbsp; <span id="profile">Github</span>
+                                        style="font-size:20px"></i> &nbsp; <span id="profile">My Github</span>
                                 </button></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm-6">
-                    <div class="card" id="info">
+                    <div class="card" id="details">
                         <div class="card-body">
                             <h4 class="title">Username : <span class="name"> {{ user.login }}</span>
                             </h4>
                             <hr>
-                            <p><i class="fa fa-file-o" style="font-size:30px"></i> Repositories : <span
+                            <p><i class="" style="font-size:30px"></i> Repositories : <span
                                     class="repo-num"> {{ user.public_repos }}</span></p><br>
-                            <p><i class="fa fa-clock-o" style="font-size:18px"></i> Joined : <span class="joined">
+                            <p><i class="" style="font-size:25px"></i> Joined : <span class="joined">
                                     {{ user.created_at | dateCount }} </span> </p>
                         </div>
                     </div>
